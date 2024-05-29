@@ -7,11 +7,8 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
 	allPeoples = [
-		{ people: "João", bio: "La La Land" },
-		{ people: "Elma", bio: "A Origem" },
+		{ person: "João", bio: "Pai de Pet" },
+		{ person: "Elma", bio: "Mãe de Pet" },
 	];
 
-	peoples() {
-		return this.allPeoples[0].people && this.allPeoples[0].bio;
-	}
 }

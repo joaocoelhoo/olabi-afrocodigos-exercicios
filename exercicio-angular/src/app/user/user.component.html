@@ -1,5 +1,9 @@
-<p>Aqui é o user.component</p>
-<!-- <ul>Pessoa: {{allPeoples[1].people}}
-	<li >Bio: {{allPeoples[1].bio}}</li>
-</ul> -->
-<p>{{peoples()}}</p>
+<div *ngFor="let people of allPeoples" class="people">
+	<ul>
+		<li>
+            Nome: {{ people.person }}
+            <br>
+            Biografia: {{ people.bio }}
+        </li>
+	</ul>
+</div>
